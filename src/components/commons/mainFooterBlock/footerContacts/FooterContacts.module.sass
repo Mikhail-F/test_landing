@@ -1,0 +1,42 @@
+@import "../../../../styles/colors"
+
+.block__item
+    max-width: 250px
+    .title_block_main
+        font-size: 28px
+        display: flex
+        position: relative
+        color: $white
+        margin-bottom: 40px
+        .nav_circle
+            border-radius: 50%
+            width: 32px
+            height: 32px
+            background-color: $back-btn-color
+            margin-right: 30px
+            .circle_inner_text
+                border-radius: 50%
+                border: 2px solid $back-footer-border
+                position: absolute
+                left: 20px
+                width: 32px
+                height: 32px
+                font-size: 20px
+                line-height: 28px
+                color: $back-footer-border
+                background: $white
+
+    .block__contact
+        color: $white
+        display: flex
+        flex-direction: row
+        margin-bottom: 20px
+        .block__contact_left
+            color: $white
+            font-weight: bold
+            margin-right: 10px
+        .block__contact_right
+            color: $white
+            text-align: left
+
+@media (max-width: 880px)

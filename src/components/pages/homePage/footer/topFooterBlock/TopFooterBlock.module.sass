@@ -1,0 +1,45 @@
+@import "../../../../../styles/colors"
+
+.top__block
+    margin-bottom: 80px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 200px
+    .top__inner
+        max-width: 600px
+        .top__title
+            color: $white
+            font-size: 36px
+            line-height: 46px
+            margin-bottom: 30px
+            text-align: left
+            max-width: 300px
+        .top__subtitle
+            color: $white
+            opacity: .6
+            line-height: 26px
+            text-align: left
+            max-width: 460px
+    .talk__block_btn
+        font-size: 16px
+        background: $back-btn-color
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+        border-radius: 10px
+        outline: none
+        border: none
+        height: 56px
+        padding: 15px 48px
+        color: $white
+        cursor: pointer
+        width: 220px
+        min-width: 165px
+        &:hover
+            opacity: 0.7
+
+@media (max-width: 880px)
+    .top__block
+        flex-direction: column
+        padding-left: 100px
+        .talk__block_btn
+            margin-top: 40px

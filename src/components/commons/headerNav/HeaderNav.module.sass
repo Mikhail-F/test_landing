@@ -1,0 +1,38 @@
+@import "../../../styles/colors"
+
+.nav
+    display: flex
+    justify-content: space-between
+    position: relative
+    margin: 30px 30px 0 30px
+    vertical-align: middle
+
+    .nav_circle
+        border-radius: 50%
+        width: 32px
+        height: 32px
+        background-color: $back-footer-border
+
+        .circle_inner_text
+            border-radius: 50%
+            border: 2px solid $back-footer-border
+            position: absolute
+            left: 20px
+            z-index: 1
+            width: 32px
+            height: 32px
+            background: $white
+            font-weight: bold
+            line-height: 26px
+            color: $back-footer-border
+
+.burger_menu
+    height: 32px
+    width: 32px
+    padding: 5px 3px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    .burger_item
+        height: 3px
+        background-color: $back-footer-border
