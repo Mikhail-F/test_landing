@@ -6,7 +6,7 @@ import { ContactUsPage } from "./components/pages/contactUsPage/ContactUsPage";
 function App() {
   return (
     <div className={styles.App}>
-      <Routes>
+      <Routes location={"/test_landing"}>
         <Route path="/" element={<HomePage />} />
         <Route path="/contactUs" element={<ContactUsPage />} />
       </Routes>
