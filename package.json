@@ -1,8 +1,7 @@
 {
   "name": "test_landing",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "https://Mikhail-F.github.io/Mikhail-F",
+  "private": true,
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
     "@testing-library/jest-dom": "^5.17.0",
