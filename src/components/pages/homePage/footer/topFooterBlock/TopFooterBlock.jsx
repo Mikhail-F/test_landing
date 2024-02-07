@@ -1,4 +1,4 @@
-import { ButtonCustom } from "../../../../widgets/ButtonCustom"
+import { ButtonCustom } from "@widgets/ButtonCustom"
 import styles from "./TopFooterBlock.module.sass";
 
 export function TopFooterBlock() {

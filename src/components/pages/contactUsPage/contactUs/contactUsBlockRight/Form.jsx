@@ -1,8 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useMainState } from "../../../../../state/state";
+import { useMainState } from "@state/state";
 import styles from "./ContactUsBlockRight.module.sass";
-import { ButtonCustom } from "../../../../widgets/ButtonCustom";
+import { ButtonCustom } from "@widgets/ButtonCustom";
 
 export default function Form() {
   const {

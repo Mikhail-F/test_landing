@@ -1,5 +1,5 @@
-import { MainFooterBlock } from "../../commons/mainFooterBlock/MainFooterBlock";
-import { HeaderNav } from "../../commons/headerNav/HeaderNav";
+import { MainFooterBlock } from "@commons/mainFooterBlock/MainFooterBlock";
+import { HeaderNav } from "@commons/headerNav/HeaderNav";
 import styles from "./ContactUsPage.module.sass";
 import { ContactUsBanner } from "./contactUsBanner/ContactUsBanner";
 import { ContactUs } from "./contactUs/ContactUs";

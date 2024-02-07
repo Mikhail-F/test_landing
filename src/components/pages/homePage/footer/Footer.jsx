@@ -1,5 +1,5 @@
 import styles from "./Footer.module.sass";
-import { MainFooterBlock } from "../../../commons/mainFooterBlock/MainFooterBlock";
+import { MainFooterBlock } from "@commons/mainFooterBlock/MainFooterBlock";
 import { TopFooterBlock } from "./topFooterBlock/TopFooterBlock";
 
 export function Footer() {

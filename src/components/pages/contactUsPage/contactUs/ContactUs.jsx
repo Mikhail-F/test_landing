@@ -1,7 +1,7 @@
 import styles from "./ContactUs.module.sass";
-import contact_us from "../../../../assets/images/contact_us.png";
+import contact_us from "@images/contact_us.png";
 import { ContactUsBlockLeft } from "./contactUsBlockLeft/ContactUsBlockLeft";
-import phoneImg from "../../../../assets/images/ic_phone.png";
+import phoneImg from "@images/ic_phone.png";
 import { ContactUsBlockRight } from "./contactUsBlockRight/ContactUsBlockRight";
 
 export function ContactUs() {

@@ -1,6 +1,6 @@
 import styles from "./Header.module.sass";
 import { HeaderBlock } from "./headerBlock/HeaderBlock";
-import { HeaderNav } from "../../../commons/headerNav/HeaderNav";
+import { HeaderNav } from "@commons/headerNav/HeaderNav";
 
 export function Header() {
   return (

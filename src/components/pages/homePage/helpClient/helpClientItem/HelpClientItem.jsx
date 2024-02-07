@@ -1,5 +1,5 @@
 import styles from "./HelpClientItem.module.sass";
-import arrow_right from "../../../../../assets/images/ic_arrow_forward_24px.png";
+import arrow_right from "@images/ic_arrow_forward_24px.png";
 import { useNavigate } from "react-router-dom";
 
 export function HelpClientItem({

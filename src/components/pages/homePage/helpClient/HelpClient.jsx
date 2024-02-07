@@ -1,8 +1,8 @@
 import styles from "./HelpClient.module.sass";
 import { HelpClientItem } from "./helpClientItem/HelpClientItem";
-import block_1 from "../../../../assets/images/block_1.png";
-import block_2 from "../../../../assets/images/block_2.png";
-import block_3 from "../../../../assets/images/block_3.png";
+import block_1 from "@images/block_1.png";
+import block_2 from "@images/block_2.png";
+import block_3 from "@images/block_3.png";
 
 export function HelpClient() {
   const helpClientRightBlock = [

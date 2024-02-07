@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import styles from "./ModalSuccesSendForm.module.sass";
-import { ButtonCustom } from "../../widgets/ButtonCustom";
-import { useMainState } from "../../../state/state";
+import { ButtonCustom } from "@widgets/ButtonCustom";
+import { useMainState } from "@state/state";
 
 export function ModalSuccesSendForm() {
   const changeShowModal = useMainState((state) => state.changeShowModal);

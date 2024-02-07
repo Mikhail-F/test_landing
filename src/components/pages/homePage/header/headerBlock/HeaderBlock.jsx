@@ -1,4 +1,4 @@
-import illustrationHeader from "../../../../../assets/images/illustration.png";
+import illustrationHeader from "@images/illustration.png";
 import styles from "./HeaderBlock.module.sass";
 
 export function HeaderBlock() {
