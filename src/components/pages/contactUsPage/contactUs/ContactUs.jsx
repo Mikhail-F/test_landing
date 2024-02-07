@@ -48,7 +48,7 @@ export function ContactUs() {
         <div className={styles.contact__left}>
           <img src={contact_us} className={styles.contact__us_img} />
           {contactUsData.map((el) => (
-            <ContactUsBlockLeft title={el.title} items={el.items} />
+            <ContactUsBlockLeft key={el.title} title={el.title} items={el.items} />
           ))}
         </div>
         <div className={styles.contact__right}>

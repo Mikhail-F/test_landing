@@ -5,7 +5,7 @@ export function ContactUsBlockLeft({ title, items }) {
     <div key={title} className={styles.contact__block}>
       <p className={styles.title}>{title}</p>
       {items.map((el) => (
-        <ContactUsContent item={el} />
+        <ContactUsContent key={el.subtitle} item={el} />
       ))}
     </div>
   );
@@ -13,7 +13,7 @@ export function ContactUsBlockLeft({ title, items }) {
 
 function ContactUsContent({ item }) {
   return item.img ? (
-    <div key={item.subtitle} className={styles.contact__data}>
+    <div className={styles.contact__data}>
       <img
         src={item.img}
         className={styles.contact__img}
