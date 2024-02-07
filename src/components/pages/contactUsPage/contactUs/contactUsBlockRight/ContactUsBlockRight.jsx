@@ -1,51 +1,12 @@
-import { useState } from "react";
+import { useMainState } from "../../../../../state/state";
 import { ButtonCustom } from "../../../../widgets/ButtonCustom";
 import styles from "./ContactUsBlockRight.module.sass";
-import Modal from "react-modal";
 
 export function ContactUsBlockRight() {
-  const [showModal, setShowModal] = useState(false);
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      alignItems: "center",
-      display: "flex",
-      flexDirection: "column",
-      transform: "translate(-50%, -50%)",
-    },
-  };
+  const changeShowModal = useMainState((state) => state.changeShowModal);
+
   return (
     <div className={styles.block__right_inner}>
-      <Modal
-        isOpen={showModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <h2>Форма отправлена</h2>
-        <button
-          onClick={() => setShowModal(false)}
-          style={{
-            marginTop: "20px",
-            fontSize: "16px",
-            background: "$back-btn-color",
-            boxShadow: "5px 10px 20px rgba(53, 110, 173, 0.2)",
-            borderRadius: "10px",
-            outline: "none",
-            border: "none",
-            height: "56px",
-            padding: " 15px 48px",
-            color: "$white",
-            cursor: " pointer",
-            minWidth: "165px",
-          }}
-        >
-          Закрыть
-        </button>
-      </Modal>
       <p className={styles.title}>SEND US MESSAGE</p>
       <div className={styles.field}>
         <label for="fullname" className={styles.field__title}>
@@ -82,7 +43,7 @@ export function ContactUsBlockRight() {
       </div>
       <ButtonCustom
         title={"Submit"}
-        onClick={() => setShowModal(true)}
+        onClick={changeShowModal}
         style={styles.contact__btn}
       />
     </div>
