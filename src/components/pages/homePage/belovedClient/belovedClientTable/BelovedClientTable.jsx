@@ -6,33 +6,11 @@ export function BelovedClientTable() {
 
   return (
     <div className={styles.clients_table}>
-      <div
-        className={`${styles.block} ${styles.brdr_right} ${styles.brdr_bottom}`}
-      >
-        LOGO CLIENT 1
-      </div>
-      <div
-        className={`${styles.block} ${styles.brdr_right} ${styles.brdr_bottom}`}
-      >
-        LOGO CLIENT 2
-      </div>
-      <div
-        className={`${styles.block} ${styles.brdr_right} ${styles.brdr_bottom}`}
-      >
-        LOGO CLIENT 3
-      </div>
-      <div className={`${styles.block} ${styles.brdr_bottom}`}>
-        LOGO CLIENT 4
-      </div>
-      <div className={`${styles.block} ${styles.brdr_right}`}>
-        LOGO CLIENT 5
-      </div>
-      <div className={`${styles.block} ${styles.brdr_right}`}>
-        LOGO CLIENT 6
-      </div>
-      <div className={`${styles.block} ${styles.brdr_right}`}>
-        LOGO CLIENT 7
-      </div>
+      {[1, 2, 3, 4, 5, 6, 7].map((el) => (
+        <div key={el} className={styles.block}>
+          LOGO CLIENT {el}
+        </div>
+      ))}
       <button
         onClick={() => {
           navigate("/");

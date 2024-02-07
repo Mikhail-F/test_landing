@@ -15,7 +15,6 @@ export function HelpClientItem({
       <div className={styles.wrap_img}>
         <img
           src={img}
-          alt="Face"
           className={
             isImgOutBlock
               ? styles.class_name_out_block_img

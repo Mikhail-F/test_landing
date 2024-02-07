@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ButtonCustom } from "../../../../hoc/ButtonCustom";
+import { ButtonCustom } from "../../../../widgets/ButtonCustom";
 import styles from "./ContactUsBlockRight.module.sass";
 import Modal from "react-modal";
 

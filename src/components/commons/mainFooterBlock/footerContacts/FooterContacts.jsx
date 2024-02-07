@@ -17,11 +17,11 @@ export function FooterContacts() {
       </div>
       <div className={styles.block__contact}>
         <p className={styles.block__contact_left}>T.</p>
-        <p className={styles.block__contact_right}>+62-812-7313-4321</p>
+        <a href="tel:+6281273134321" className={styles.block__contact_right}>+62-812-7313-4321</a>
       </div>
       <div className={styles.block__contact}>
         <p className={styles.block__contact_left}>E.</p>
-        <p className={styles.block__contact_right}>hello.afrian@gmail.com</p>
+        <a href="mailto:hello.afrian@gmail.com" className={styles.block__contact_right}>hello.afrian@gmail.com</a>
       </div>
     </div>
   );
