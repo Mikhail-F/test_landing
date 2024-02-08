@@ -1,0 +1,41 @@
+@import "@styles/colors"
+
+.help_client
+    display: flex
+    justify-content: center
+    padding: 0 20px
+    .help_client_inner
+        display: flex
+        margin: 200px 0 100px 0
+        width: 900px
+        justify-content: space-between
+        align-self: center
+    .column_left
+        .description
+            font-size: 36px
+            line-height: 46px
+            text-align: left
+            margin-bottom: 150px
+            color: $main-second
+        .block_wrapper
+            margin-left: 50px
+
+@media (max-width: 880px)
+    .help_client
+        .help_client_inner
+            margin: 50px 0 25px 0
+            flex-direction: column
+            align-items: center
+        .column_left
+            .description
+                margin-bottom: 50px
+            .block_wrapper
+                margin-left: 0
+
+@media (max-width: 450px)
+    .help_client
+        .help_client_inner
+        .column_left
+            .description
+                font-size: 32px
+                line-height: 40px

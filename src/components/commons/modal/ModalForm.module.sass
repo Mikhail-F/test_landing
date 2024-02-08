@@ -1,0 +1,46 @@
+@import "@styles/colors"
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: 0 auto
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #0000002a
+    .modal__inner
+        border-radius: 20px
+        max-width: 400px
+        padding: 30px
+        width: 100%
+        margin: 0 20px
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        background-color: #fff
+        .modal__top
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .modal__title
+                text-align: left
+                font-size: 20px
+                line-height: 30px
+                color: $main-second
+                font-weight: 600
+                margin-right: 20px
+            .modal__close
+                width: 40px
+                height: 40px
+                border-radius: 20px
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: $light-grey
+                cursor: pointer
+                &:hover
+                    opacity: 0.7

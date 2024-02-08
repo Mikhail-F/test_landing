@@ -9,6 +9,10 @@ export function FooterColumnItems({ title, items }) {
   );
 
   function contactItem(text) {
-    return <a key={text} href={"/"} className={styles.item}>{text}</a>;
+    return (
+      <a key={text} href={"/"} className={styles.item}>
+        {text}
+      </a>
+    );
   }
 }

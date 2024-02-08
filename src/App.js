@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import styles from "./App.module.sass";
-import { HomePage } from "./components/pages/homePage/HomePage";
-import { ContactUsPage } from "./components/pages/contactUsPage/ContactUsPage";
-import { ModalSuccesSendForm } from "@commons/modal/ModalSuccesSendForm";
+import { HomePage } from "./components/pages/HomePage";
+import { ModalForm } from "@commons/modal/ModalForm";
 import { useMainState } from "@state/state";
 
 function App() {
@@ -11,9 +10,8 @@ function App() {
     <div className={styles.App}>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/contactUs" element={<ContactUsPage />} />
       </Routes>
-      {isShowModal ? <ModalSuccesSendForm /> : null}
+      {isShowModal ? <ModalForm /> : null}
     </div>
   );
 }
