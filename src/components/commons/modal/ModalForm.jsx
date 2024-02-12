@@ -23,11 +23,16 @@ export function ModalForm() {
   }, []);
 
   return (
-    <div className={styles.modal}>
+    <div
+      className={styles.modal}
+      onClick={(e) => e.currentTarget === e.target && changeShowModal(false)}
+    >
       <div className={styles.modal__inner}>
         <div className={styles.modal__top}>
           <h2 className={styles.modal__title}>
-            {isSuccessSendContactForm ? "Your message successfully sent" : "SEND US MESSAGE"}
+            {isSuccessSendContactForm
+              ? "Your message successfully sent"
+              : "SEND US MESSAGE"}
           </h2>
           <div
             className={styles.modal__close}
